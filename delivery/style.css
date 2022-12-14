@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #1e1e1e;
+  color-scheme: dark;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.container header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container header .containerHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+.container header .containerHeader img {
+  width: 150px;
+  height: 10vh;
+}
+.container header .containerHeader h1 {
+  margin: 0.5rem;
+}
+.container header .containerHeader input {
+  width: 100px;
+  height: 40px;
+  padding: 0.5rem;
+}
+.container main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container main .containerMain {
+  padding: 0.5rem;
+  width: 95%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.container main .containerMain form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container main .containerMain form input {
+  padding: 5px;
+}
+.container main .containerMain form label {
+  display: flex;
+  justify-content: space-between;
+}
+.container main .containerMain .andamentoCards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 50%;
+  min-width: 100%;
+  gap: 5px;
+  min-height: 300px;
+  overflow-x: scroll;
+}
+.container main .containerMain .andamentoCards .cardEntrega {
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  -webkit-border-radius: 10px 0 10px 0;
+  -moz-border-radius: 10px 0 10px 0;
+  -ms-border-radius: 10px 0 10px 0;
+  -o-border-radius: 10px 0 10px 0;
+  background-color: #ffffff;
+  color-scheme: white;
+  color: #070707;
+  min-height: 150px;
+  height: 25%;
+}
+.container main .containerMain .andamentoCards .cardEntrega .cardContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.container main .containerMain .andamentoCards .cardEntrega .cardContent .del {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.container main .containerMain .andamentoCards .cardEntrega .cardContent button {
+  padding: 5px 7px;
+  align-self: flex-end;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #070707;
+  border: none;
+  color: #eee;
+}
+.container main .containerMain .entregueCards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  max-height: 50%;
+  gap: 5px;
+  min-height: 300px;
+}
+.container main .containerMain .entregueCards .cardEntrega {
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  -webkit-border-radius: 10px 0 10px 0;
+  -moz-border-radius: 10px 0 10px 0;
+  -ms-border-radius: 10px 0 10px 0;
+  -o-border-radius: 10px 0 10px 0;
+  background-color: #ffffff;
+  color-scheme: white;
+  color: #070707;
+  min-height: 150px;
+  height: 25%;
+}
+.container main .containerMain .entregueCards .cardEntrega .cardContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-wrap: break-word;
+}
+.container main .containerMain .entregueCards .cardEntrega .cardContent .del {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+}
+.container main .containerMain .entregueCards .cardEntrega .cardContent button {
+  padding: 5px 7px;
+  align-self: flex-end;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #070707;
+  border: none;
+  color: #eee;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Delivery</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="containerHeader">
+                <img src="Assets\MarketMobile.gif" alt="logo" />
+                <h1>Serviço de entrega</h1>
+                <input type="button" value="Logar" onclick="signIn()"/>
+            </div>
+        </header>
+        <main>
+            <div class="containerMain">
+                <form method="post" class="formDelivery">
+                    <label for="inputEndereco">Endereço:</label>
+                    <input type="text" id="inputEndereco" placeholder="Digite seu endereço..." />
+
+                    <label for="inputClient">Cliente:</label>
+                    <input type="text" id="inputClient" placeholder="Digite seu nome..." />
+
+                    <label for="inputProduct">Selecione o Produto:
+                        <select aria-label="options" id="productsOptions">
+                            <option>Hamburguer</option>
+                        </select>
+                    </label>
+
+                    <input type="button" value="Gerar Pedido" id="btnPedido" />
+                </form>
+                <h1>Em andamento</h1>
+                <div class="andamentoCards"></div>
+                <h1>Entregues</h1>
+                <div class="entregueCards"></div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+</html>

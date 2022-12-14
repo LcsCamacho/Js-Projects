@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #1e1e1e;
+    color-scheme: dark;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+
+
+    header {
+        //Header
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .containerHeader {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+
+            img {
+                width: 150px;
+                height: 10vh;
+            }
+
+            h1 {
+                margin: .5rem;
+            }
+
+            input {
+                width: 100px;
+                height: 40px;
+                padding: .5rem;
+            }
+        }
+    }
+
+    //fimHeader
+
+    main {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .containerMain {
+            padding: .5rem;
+            width: 95%;
+            min-height: 90%;
+            display: flex;
+            flex-direction: column;
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                flex-direction: column;
+
+                input {
+                    padding: 5px;
+                }
+
+                label {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            .andamentoCards {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(4,1fr);   
+                max-height: 50%;
+                min-width: 100%;
+                gap: 5px;
+                min-height: 300px;
+                overflow-x: scroll;
+
+                .cardEntrega {
+                    padding: 5px;
+                    border-radius: 10px 0 10px 0;
+                    -webkit-border-radius: 10px 0 10px 0;
+                    -moz-border-radius: 10px 0 10px 0;
+                    -ms-border-radius: 10px 0 10px 0;
+                    -o-border-radius: 10px 0 10px 0;
+                    background-color: #ffffff;
+                    color-scheme: white;
+                    color: #070707;
+                    min-height: 150px;
+                    height: 25%;
+
+                    .cardContent {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        overflow-wrap: break-word;
+
+
+                        .del {
+                            position: absolute;
+                            top: 0;
+                            right: 5px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            padding: 5px 7px;
+                            align-self: flex-end;
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            background-color: #070707;
+                            border: none;
+                            color: #eee;
+                        }
+                    }
+                }
+            }
+
+            .entregueCards {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(4,1fr);
+                max-height: 50%;
+                gap: 5px;
+                min-height: 300px;
+
+                .cardEntrega {
+                    padding: 5px;
+                    border-radius: 10px 0 10px 0;
+                    -webkit-border-radius: 10px 0 10px 0;
+                    -moz-border-radius: 10px 0 10px 0;
+                    -ms-border-radius: 10px 0 10px 0;
+                    -o-border-radius: 10px 0 10px 0;
+                    background-color: #ffffff;
+                    color-scheme: white;
+                    color: #070707;
+                    min-height: 150px;
+                    height: 25%;
+
+                    .cardContent {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        overflow-wrap: break-word;
+
+
+                        .del {
+                            position: absolute;
+                            top: 0;
+                            right: 5px;
+                            cursor: pointer;
+                        }
+
+                        button {
+                            padding: 5px 7px;
+                            align-self: flex-end;
+                            border-radius: 5px;
+                            -webkit-border-radius: 5px;
+                            -moz-border-radius: 5px;
+                            -ms-border-radius: 5px;
+                            -o-border-radius: 5px;
+                            background-color: #070707;
+                            border: none;
+                            color: #eee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
