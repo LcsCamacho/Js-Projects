@@ -4,7 +4,7 @@
 
 2 - Projeto de um piano virtual <a> https://pianvirtual.netlify.app </a>
 
-3 - Projeto que demonstra temperatura em na cidade digitada <a> https://tempohoje.netlify.app </a>
+3 - Projeto que mostra a temperatura da cidade escolhida <a> https://tempohoje.netlify.app </a>
 
-4 - Projeto de delivery de lanches ou qualquer outra coisa  <a> https://webappdelivery.netlify.app </a>
+4 - Projeto de delivery <a> https://webappdelivery.netlify.app </a>
 
